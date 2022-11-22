@@ -20,5 +20,12 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        // memanggil CampTableSeeder
+        $this->call([
+            CampTableSeeder::class,
+            CampBenefitTableSeeder::class,
+            AdminUserSeeder::class,
+        ]);
     }
 }
