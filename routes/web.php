@@ -15,4 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+// name('login') -> Mengarah ke halaman login dengan menekan tombol sign in dan sign up
+Route::get('/checkout', function () {
+    return view('checkout');
+})->name('checkout');
+Route::get('/success-checkout', function () {
+    return view('success_checkout');
+})->name('success-checkout');
